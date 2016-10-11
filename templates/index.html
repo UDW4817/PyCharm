@@ -9,28 +9,23 @@
 
 <h1><strong>Hey hey!</strong</h1>
 
-<table style="width:100%">
-  <tr>
-    <th>Album Title</th>
-    <th>Album Artist</th>
-    <th>Album Year</th>
-  </tr>
-  <tr>
-    <td>True Blue</td>
-    <td>Modona</td>
-    <td>1987</td>
-  </tr>
-  <tr>
-    <td>Britney Spears</td>
-    <td>Hit Me Baby One More Time</td>
-    <td>1998</td>
-  </tr>
-  <tr>
-    <td>Pink Floyd</td>
-    <td>The Wall</td>
-    <td>1976</td>
-  </tr>
-</table>
+
+<p>Flask is just great :D </p>
+
+<ol>
+    {% for album in albums%}
+
+    <li> {{ album.title }}</li>
+    <p>{{album.artist}}</p>
+    <p>{{album.year}}</p>
+
+
+    {% endfor %}
+</ol>
+
+{% for genre in genres %}
+<p>{{genre}}</p>
+{% endfor %}
 
 
 
